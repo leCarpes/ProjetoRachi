@@ -43,7 +43,7 @@ header {
 
 
 .header-style__menu {
-    width: 100%;
+    width: 414px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -57,18 +57,20 @@ header {
 #button_menu{
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 
 .header-style__links{
     background-color: var(--background_color1);
-    position:  absolute;
+    position:  fixed;
     top: 70px;
     right: 0;
     height: 100vh;
     width: 80%;
     transform: translateX(0);
     transition: all 0.5s ease;
+    z-index: 999;
 } 
 
 
@@ -159,6 +161,7 @@ header {
     background-color: var(--Button_color);
     font-family: "Inter";
     font-size: 14px;
+    cursor: pointer;
     color: var(--Txt_color3);
     color: var(--Txt_color3);
 }
@@ -403,6 +406,7 @@ header {
     background-color: var(--Button_color);
     font-family: "Inter";
     font-size: 14px;
+    cursor: pointer;
     
     color: var(--Txt_color3);
 }
@@ -465,6 +469,7 @@ header {
     background-color:var(--Button_color);
     font-family: "Inter";
     font-size: 14px;
+    cursor: pointer;
     
     color: var(--Txt_color4);
 }
@@ -497,6 +502,9 @@ header {
 
     }
 
+    .header-style__menu{
+        width: 100%;
+    }
 
     .main_style{
         justify-content: left;
